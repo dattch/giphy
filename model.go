@@ -98,12 +98,16 @@ type Images struct {
 
 // Image represents an image
 type Image struct {
-	URL    string `json:"url"`
-	Width  string `json:"width"`
-	Height string `json:"height"`
-	Size   string `json:"size,omitempty"`
-	Frames string `json:"frames,omitempty"`
-	Mp4    string `json:"mp4,omitempty"`
+	URL      string `json:"url"`
+	Width    string `json:"width"`
+	Height   string `json:"height"`
+	Size     string `json:"size,omitempty"`
+	Frames   string `json:"frames,omitempty"`
+	Mp4      string `json:"mp4,omitempty"`
+	Mp4Size  string `json:"mp4_size"`
+	WebpURL  string `json:"webp"`
+	WebpSize string `json:"webp_size"`
+	Hash     string `json:"hash"`
 }
 
 // Pagination represents the pagination section in a Giphy API response
